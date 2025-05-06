@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        nodejs "NodeJS_18" // Match the name set in Global Tool Config
+        nodejs "Nodejs_18" // Match the name set in Global Tool Config
     }
 
     stages {
