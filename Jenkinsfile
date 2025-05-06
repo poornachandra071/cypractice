@@ -1,4 +1,4 @@
-pipeline {
+ pipeline {
     agent any
 
     tools {
@@ -8,7 +8,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/poornachandra071/cypractice.git'
+                // Explicitly specify the branch (e.g., main)
+                git branch: 'main', url: 'https://github.com/poornachandra071/cypractice.git'
             }
         }
 
